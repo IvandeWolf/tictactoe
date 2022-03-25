@@ -1,5 +1,5 @@
 <template>
-  <div @click="handleClick(index)" class="w-20 h-20 flex justify-center items-center" :class="[active || cell ? 'cursor-pointer hover:bg-gray-100' : 'cursor-not-allowed', index < 6 ? 'border-b-2' : '', index % 3 !== 2 ? 'border-r-2' : '']">
+  <div @click="handleClick(index)" class="w-10 h-10 lg:w-20 lg:h-20 flex justify-center items-center" :class="[active || cell ? 'cursor-pointer hover:bg-gray-100' : 'cursor-not-allowed', index < 6 ? 'border-b-2' : '', index % 3 !== 2 ? 'border-r-2' : '']">
     <Cross
       v-if="cell === 'X'"
     />
